@@ -1,26 +1,90 @@
 @import "tailwindcss";
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  font-family: "Helvetica Neue", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.img-gif{
+  width: auto;
+  height: 50svh;
+  display: flex;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+p,
+a {
+  color: white;
+  font-weight: 300;
+}
+
+a{
+  text-decoration: underline;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: blue;
+  border: 1px solid blue;
+  text-decoration: underline;
+  transition: all .7s ease-in-out;
+}
+
+
+.button:hover {
+  background-color: black;
+}
+
+.buttonTag{
+  text-decoration: underline;
+  padding: 0px;
+  transition: all 0.5s ease;
+}
+
+.buttonTag:hover{
+  padding: 5px;
+  background-color: blue;
+  color: white;
+}
+
+.buttonSecundario {
+  padding: 10px 20px;
+  border: 1px solid blue;
+  color: white;
+  background-color: none;
+  transition: all .7s ease-in-out;
+}
+
+.buttonSecundario:hover {
+  background-color: white;
+  color: blue;
+}
+
+.blue{
+  color: blue;
+}
+
+.heroTitleWeb {
+  letter-spacing: -13px;
+  color: blue;
+}
+
+@media (max-width: 800px) {
+  .mainSection h1{
+    text-align: center;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

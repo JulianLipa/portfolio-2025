@@ -1,0 +1,50 @@
+.mainDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("/img/profile.webp");
+  width: 100vw;
+  height: 100svh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 0;
+}
+
+.mainBody {
+  position: relative;
+  background-color: black;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+}
+
+.videoDiv {
+  height: 70vh;
+}
+
+.videoDiv video {
+  height: 100%;
+  padding: 10vh 0;
+}
+
+.titleWeb {
+  letter-spacing: -10px;
+  color: blue;
+}
+
+.heroTitleWeb {
+  letter-spacing: -13px;
+  color: blue;
+}
+
+.divBanner {
+  width: 100vw;
+  position: absolute;
+}
+
+.divBanner div{
+  height: 50svh;
+  background-color: blue;
+  z-index: 100;
+}

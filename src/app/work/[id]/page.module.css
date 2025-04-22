@@ -1,0 +1,38 @@
+.horizontalGalleryOuter {
+  overflow: hidden; /* Hide overflow to prevent unwanted scrollbars */
+  width: 100vw; /* Ensures the outer container takes full viewport width */
+}
+
+.horizontalGalleryInner {
+  display: inline-block; /* Ensure the inner container stays inline */
+  white-space: nowrap; /* Prevents wrapping of the content */
+  height: 100svh; /* Full viewport height */
+  text-align: center;
+}
+
+.horizontalGalleryInner div {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.horizontalGalleryOuter {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: initial;
+}
+
+.horizontalGalleryInner div img {
+  height: 90svh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.iFrameVimeo {
+  width: 100vw;
+  height: 80svh;
+}
